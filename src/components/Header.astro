@@ -1,0 +1,33 @@
+---
+import LucideIcon from "@/components/LucideIcon.astro";
+import { Facebook, Instagram, Youtube } from "lucide";
+import TopBar from "./TopBar.astro";
+---
+
+<header class="flex flex-col">
+  <TopBar />
+  <div class="flex flex-col justify-center items-center gap-8">
+    <a href="https://tyrrelprofessional.com">
+      <picture
+        ><source
+          srcset="https://tyrrelprofessional.com/wp-content/webp-express/webp-images/uploads/2021/07/logo.png.webp"
+          type="image/webp"
+        /><img
+          decoding="async"
+          loading="lazy"
+          width="188"
+          height="54"
+          src="https://tyrrelprofessional.com/wp-content/uploads/2021/07/logo.png"
+          class="attachment-full size-full wp-image-117 webpexpress-processed"
+          alt=""
+        /></picture
+      >
+    </a>
+    <nav>
+      <ul class="flex flex-row gap-10 text-lg">
+        <li class="uppercase font-Montserrat">Products Line</li>
+        <li class="uppercase font-Montserrat">About us</li>
+      </ul>
+    </nav>
+  </div>
+</header>
